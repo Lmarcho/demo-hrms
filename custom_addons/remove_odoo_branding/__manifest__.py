@@ -14,13 +14,7 @@
     'author': 'Lakshitha',
     'website': 'https://lmarcho.com',
     'depends': ['web', 'mail'],
-    'data': [
-        'views/layout_templates.xml',
-    ],
     'assets': {
-        'web.assets_qweb': [
-            'remove_odoo_branding/views/layout_templates.xml',
-        ],
         'web.assets_backend': [
             'remove_odoo_branding/static/src/css/remove_branding.css',
             'remove_odoo_branding/static/src/js/window_title.js',

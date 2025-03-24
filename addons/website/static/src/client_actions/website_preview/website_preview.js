@@ -161,7 +161,7 @@ export class WebsitePreview extends Component {
             const { zopenerp } = this.title.getParts();
             this.iframe.el.addEventListener('load', () => {
                 // Replace backend values with frontend's ones.
-                this.title.setParts({ zopenerp: "HRMS System" });
+                this.title.setParts({ zopenerp: "CloudERP" });
                 const frontendIconEl = this.iframe.el.contentDocument.querySelector("link[rel~='icon']");
                 if (frontendIconEl) {
                     backendIconEl.href = frontendIconEl.href;
