@@ -1,0 +1,9 @@
+<odoo>
+  <template id="clouderp_login_title_fix" inherit_id="web.login_layout">
+    <xpath expr="//t[@t-set='html_data']" position="before">
+      <t t-set="html_data">
+        <t t-set="title">CloudERP</t>
+      </t>
+    </xpath>
+  </template>
+</odoo>
