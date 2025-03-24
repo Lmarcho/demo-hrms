@@ -1,0 +1,80 @@
+/* Hide Odoo branding elements */
+
+/* Hide "Powered by Odoo" in various places */
+.o_powered_by,
+.o_brand_promotion,
+[title*="Odoo"],
+[alt*="Odoo"],
+a[href^="https://www.odoo.com"],
+img[src*="odoo"],
+.o_footer_copyright_name,
+.o_home_menu_footer {
+    display: none !important;
+}
+
+/* Hide Odoo logo in login screen */
+.o_main_navbar .o_menu_brand,
+.o_login_logo,
+.o_odoo_logo_container,
+img[alt="Logo"],
+.o_logo {
+    opacity: 0 !important;
+}
+
+/* Replace page title */
+/*title:before {
+    content: "CloudERP" !important;
+}
+/*
+/* Remove Odoo from title */
+/*title {
+    text-indent: -9999px;
+    line-height: 0;
+}
+*/
+/* Hide Odoo from app switcher */
+.o_main_navbar .o_menu_brand {
+    visibility: hidden !important;
+}
+
+/* Hide database manager link and other menu items that may contain Odoo branding */
+a[href^="/web/database/"],
+.o_debug_dropdown a[data-menu="documentation"],
+.o_debug_dropdown a[data-menu="support"],
+.o_debug_dropdown span[data-menu="account"] {
+    display: none !important;
+}
+
+/* Hide user menu items that mention odoo */
+.o_user_menu a[data-menu="documentation"],
+.o_user_menu a[data-menu="support"],
+.o_user_menu span[data-menu="account"] {
+    display: none !important;
+}
+
+/* Hide database expiration warning */
+.alert.alert-info.o_database_expiration {
+    display: none !important;
+}
+
+/* Hide Odoo promotional dialogs */
+.modal-title:contains("Odoo"),
+.modal-body:contains("Odoo") {
+    display: none !important;
+}
+
+/* Hide the debug menu items that contain "Odoo" */
+.dropdown-item:contains("Odoo") {
+    display: none !important;
+}
+
+/* Hide odoo links in settings pages */
+a[href^="https://www.odoo.com/documentation"] {
+    display: none !important;
+}
+
+/* Override common branding elements with generic styles Replace with your brand color */
+/*.o_main_navbar {
+    background-color: #714B67 !important;
+}
+/*
